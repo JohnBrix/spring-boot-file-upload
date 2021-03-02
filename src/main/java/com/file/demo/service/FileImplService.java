@@ -1,6 +1,6 @@
 package com.file.demo.service;
 
-import com.file.demo.Dto.FileDto;
+import com.file.demo.dto.FileDto;
 import com.file.demo.domain.FileDomain;
 import com.file.demo.repository.FileRepository;
 import org.springframework.stereotype.Service;

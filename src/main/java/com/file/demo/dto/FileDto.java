@@ -1,4 +1,4 @@
-package com.file.demo.Dto;
+package com.file.demo.dto;
 
 public class FileDto {
 
