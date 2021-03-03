@@ -27,7 +27,7 @@ public class FileController {
     public ResponseEntity<Object> uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
         /*kinukuha nya yung file path kung saan dpt maiupload
         magsasave na folder*/
-        File convertFile = new File("C:\\Users\\john brix17\\Downloads\\uploaded\\"+file.getOriginalFilename());
+        File convertFile = new File("C:\\Users\\john%brix17\\Downloads\\uploaded\\"+file.getOriginalFilename());
         convertFile.createNewFile();
         FileOutputStream fout = new FileOutputStream(convertFile);
         fout.write(file.getBytes());
