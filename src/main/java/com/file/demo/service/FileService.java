@@ -5,5 +5,5 @@ import com.file.demo.domain.FileDomain;
 import java.io.File;
 
 public interface FileService {
-    FileDomain upload(File originalFilename);
+    FileDomain upload(String originalFilename);
 }

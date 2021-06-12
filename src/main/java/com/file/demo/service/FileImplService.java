@@ -17,7 +17,7 @@ public class FileImplService implements FileService {
     }
     /*this is for profile.jpg String originalFilename*/
     @Override
-    public FileDomain upload(File originalFilename){
+    public FileDomain upload(String originalFilename){
         //dto
         FileDto fileDto = new FileDto();
         fileDto.setFile(originalFilename.toString());
