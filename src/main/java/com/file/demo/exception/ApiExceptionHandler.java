@@ -1,7 +1,7 @@
 package com.file.demo.exception;
 
 import com.file.demo.util.UriUtil;
-import org.hibernate.exception.ConstraintViolationException;
+/*import org.hibernate.exception.ConstraintViolationException;*/
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -36,10 +36,10 @@ public class ApiExceptionHandler {
     }
     //IF MY KAPAREHO VALUE and unique yung value na pinasok example gmit mo na si pomoyjohnbrix@gmail.com
     //bawal na sya reuse kaya magiging gnto response
-    @ExceptionHandler(ConstraintViolationException.class)
+   /* @ExceptionHandler(ConstraintViolationException.class)
     @ResponseStatus(HttpStatus.METHOD_NOT_ALLOWED)
     public ApiErrorResponse constraintException(ConstraintViolationException exception) {
         List<Message> messages = Arrays.asList(new Message(exception.getMessage()));
         return new ApiErrorResponse(HttpStatus.METHOD_NOT_ALLOWED, LocalDateTime.now(), messages, UriUtil.path());
-    }
+    }*/
 }
